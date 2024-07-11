@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #800080; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img.logo {
+    height: 150px;
+    margin-right: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.alert-section {
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-section #alertMessage {
+    font-weight: bold;
+}
+
+.timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timer-section label {
+    margin: 10px 0;
+}
+
+.timer-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.timer-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #800080; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timer-section button:hover {
+    background-color: #660066;
+}
+
+.timer {
+    margin-top: 20px;
+}
+
+.timer #timer {
+    font-size: 3em; 
+    color: #333;
+}
+
+.procedures {
+    margin-top: 20px;
+}
+
+.procedures h2 {
+    color: #800080; }
+
+.procedures p {
+    text-align: left;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #660066;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+}

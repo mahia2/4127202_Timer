@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSBU Exam Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/LSBU.png" alt="LSBU Logo" class="logo">
+        <h1>LSBU Exam Timer</h1>
+    </header>
+    <div class="container">
+        <div class="timer-section">
+            <label for="startTime">Exam Start Time:</label>
+            <input type="datetime-local" id="startTime" name="startTime">
+            <label for="endTime">Exam End Time:</label>
+            <input type="datetime-local" id="endTime" name="endTime">
+            <label for="restrictedStart">Restricted Time at Start (minutes):</label>
+            <input type="number" id="restrictedStart" name="restrictedStart" value="30">
+            <label for="restrictedEnd">Restricted Time at End (minutes):</label>
+            <input type="number" id="restrictedEnd" name="restrictedEnd" value="30">
+            <button id="setTimes">Set Times</button>
+            <div class="timer">
+                <h2 id="timer">00:00:00</h2>
+            </div>
+        </div>
+        <div class="alert-section">
+            <div id="alertMessage">Please set the exam times.</div>
+        </div>
+        <div class="procedures">
+            <h2>Exam Procedures</h2>
+            <p>Details about exam procedures...</p>
+        </div>
+        <div class="container">
+            <h1>Enter Invigilator Information</h1>
+            <form id="invigilatorForm">
+                <label for="moduleName">Module Name:</label><br>
+                <input type="text" id="moduleName" name="moduleName" required><br>
+    
+                <label for="studentsAttended">Students Attended:</label><br>
+                <input type="number" id="studentsAttended" name="studentsAttended" required><br>
+    
+                <label for="logIssues">Log Issues:</label><br>
+                <textarea id="logIssues" name="logIssues" rows="4" required></textarea><br>
+    
+                <button type="submit">Save Information</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
